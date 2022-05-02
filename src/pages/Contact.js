@@ -6,6 +6,7 @@ import {
   TextField,
   Button,
   Stack,
+  
 } from "@mui/material";
 import Map from "../componenents/Map";
 import FacebookIcon from "@mui/icons-material/Facebook";
@@ -14,22 +15,26 @@ import LinkedInIcon from "@mui/icons-material/LinkedIn";
 function Contact() {
   return (
     <Container>
-      <Typography variant="h3" textAlign="center" sx={{ marginTop: 5 }}>
-        Contact
+     
+        <Typography variant="h3" textAlign="center" sx={{ marginTop: 5 }}>
+        
       </Typography>
-      <Grid container spacing={2} sx={{ marginTop: 5 }}>
-        <Grid item md={8}>
+    
+      
+      <Grid container spacing={2} sx={{ marginTop: 4 }} justifySelf={'center'}>
+        <Grid  item md={8}> 
           <Box
             sx={{
               width: "100%",
-              height: "60vh",
+              // height: "60vh",
               maxWidth: "100%",
-              backgroundColor: "#e8edf0",
+              // backgroundColor: "#e8edf0",
+         
             }}
           >
             <form>
               <Container>
-                <Grid container spacing={2}>
+                <Grid container spacing={1}>
                   <Grid item sm={6} xs={12}>
                     <label>Full Name</label>
                     <TextField
@@ -76,20 +81,21 @@ function Contact() {
             </form>
           </Box>
         </Grid>
-        <Grid item md={4} xs={12}>
+        <Grid item md={4} xs={12} >
           <Box
             sx={{
               width: "100%",
               height: "60vh",
-
               minWidth: "100%",
             }}
           >
-            <Container>
-              <Grid container spacing={2}>
+           <Container>
+             <Grid container spacing={1}>
                 <Map />
               </Grid>
-            </Container>
+           </Container>
+              
+            
           </Box>
         </Grid>
       </Grid>
@@ -114,7 +120,7 @@ function Contact() {
       }}/>
 
 </Stack>
-    
+
     </Container>
   );
 }
